@@ -1,12 +1,9 @@
 #include <stdio.h>
+
 /**
- *
- * main - Uses puts funtion to print text
- *
+ * main - Entry Point
  *
  * Return: Always 0 (Success)
- *
- *
  */
 
 int main(void)
