@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - function assigns a random number to n and prints if the number is negative or not
+ * main - prints if the number is negative or not
  *
- * Return = Always 0
+ * Return: Always 0
  */
 
 int main(void)
