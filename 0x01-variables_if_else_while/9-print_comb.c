@@ -3,7 +3,7 @@
 /**
  * main - function prints all combinations
  * of single digit numbers
- * 
+ *
  *
  * Return: Always 0
  */
