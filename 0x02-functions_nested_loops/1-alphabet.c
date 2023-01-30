@@ -1,19 +1,18 @@
-#include "main.c"
+#include "main.h"
 
 /**
- * main - Program uses _putchar to print 
- * alphabet in lowercase
- *
- * Return: void
- */
-
+  * print_alphabet - Make the alphabet
+  *
+  * Return: void
+  *
+  */
 void print_alphabet(void)
 {
-	char alphabet;
+	char c;
 
-	for( alphabet= 'a'; alphabet<= 'z'; alphabet++ )
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(alphabet);
+		_putchar(c);
 	}
 	_putchar('\n');
 }
