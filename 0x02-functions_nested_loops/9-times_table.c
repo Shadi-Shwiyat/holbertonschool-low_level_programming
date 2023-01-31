@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * times_table - prints a multiplecation table
@@ -6,7 +6,7 @@
  * Return: void
  */
 
-void times_table(void);
+void times_table(void)
 {
 	int x, y, z, u, d;
 
