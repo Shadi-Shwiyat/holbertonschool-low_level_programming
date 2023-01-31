@@ -13,8 +13,11 @@ int _abs(int n)
 	if (n < 0)
 	{
 		int absolute;
+
 		absolute = n * -1;
+
 		return (absolute);
 	}
+
 	return (n);
 }
