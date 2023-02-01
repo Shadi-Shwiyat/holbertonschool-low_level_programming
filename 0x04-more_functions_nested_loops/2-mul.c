@@ -6,6 +6,7 @@
  * @a: the first number to be multiplied
  * @b: the second number to be multiplied
  *
+ *
  * Return: the product
  */
 
