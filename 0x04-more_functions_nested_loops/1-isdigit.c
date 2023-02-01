@@ -6,7 +6,7 @@
  *
  * @c: the character that is checked
  *
- * Return: 1 if uppercase otherwise 0
+ * Return: 1 if digit exist otherwise 0
  */
 
 int _isdigit(int c)
