@@ -16,17 +16,17 @@ int main(void)
 
 	for (num1 = 1; num1 <= 100; num1++)
 	{
-		if ((num1 % 3) == 0)
+		if ((num1 % 15) == 0)
+		{
+			printf("%s ", "FizzBuzz");
+		}
+		else if ((num1 % 3) == 0)
 		{
 			printf("%s ", "Fizz");
 		}
 		else if ((num1 % 5) == 0)
 		{
 			printf("%s ", "Buzz");
-		}
-		else if ((num1 % 15) == 0)
-		{
-			printf("%s ", "FizzBuzz");
 		}
 		else
 		{
