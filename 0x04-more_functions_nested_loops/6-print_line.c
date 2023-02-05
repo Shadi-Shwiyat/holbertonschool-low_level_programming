@@ -4,7 +4,7 @@
  * print_line - prints a line with a length
  * equivilant to the variable given
  * @n: the number of lines to print
- * 
+ *
  *
  * Return: Void
  */
