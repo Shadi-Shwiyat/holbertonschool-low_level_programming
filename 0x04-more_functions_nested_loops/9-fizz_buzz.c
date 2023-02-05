@@ -30,7 +30,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ", num1);
+			printf("%d", num1);
 		}
 		if (num1 != 100)
 		{
