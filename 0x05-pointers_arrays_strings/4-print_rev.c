@@ -12,7 +12,7 @@ void print_rev(char *s)
 	int scounter = 0;
 	int x, y;
 
-	for (x = 0; s[x] != '\0'; i++)
+	for (x = 0; s[x] != '\0'; x++)
 	{
 	scounter++;
 	}
