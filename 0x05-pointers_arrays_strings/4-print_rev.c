@@ -9,17 +9,17 @@
 
 void print_rev(char *s)
 {
-	int fcounter = 0;
-	int i, n;
+	int scounter = 0;
+	int x, y;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (x = 0; s[x] != '\0'; i++)
 	{
-	fcounter++;
+	scounter++;
 	}
 
-	for (n = (fcounter - 1); n >= 0; n--)
+	for (y = (scounter - 1); y >= 0; y--)
 	{
-		_putchar(s[n]);
+		_putchar(s[y]);
 	}
 	_putchar('\n');
 }
