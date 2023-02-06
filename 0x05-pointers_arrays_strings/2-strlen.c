@@ -9,7 +9,7 @@
  * Return: lenght of string
  */
 
-int _strlen(char *s);
+int _strlen(char *s)
 {
 	int length;
 
@@ -18,5 +18,6 @@ int _strlen(char *s);
 		length = length + 1;
 		s = s + 1;
 	}
+
 	return (length);
 }
