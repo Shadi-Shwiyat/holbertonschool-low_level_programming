@@ -5,6 +5,8 @@
  * strings
  * @dest: the string that has the source added to the end
  * @src: the string that is added to the end of dest
+ * @n: the number of characters to stop on src
+ *
  *
  * Return: a pointer to the resulting string dest
  */
