@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strncpy - function copies two strings together
+ * *_strncpy - function copies two string together
  *
  * @dest: the string that has the source added to the end
  * @src: the string that is added to the end of dest
