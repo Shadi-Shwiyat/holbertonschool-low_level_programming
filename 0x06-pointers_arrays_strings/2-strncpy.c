@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strcpy - function copies two strings together
+ * *_strncpy - function copies two strings together
  *
  * @dest: the string that has the source added to the end
  * @src: the string that is added to the end of dest
@@ -16,7 +16,7 @@ char *_strncpy(char *dest, char *src, int n)
 	int destlen = 0;
 	int srclen = 0;
 
-	
+
 	for (; srclen < n && src[srclen] != '\0'; srclen++)
 	{
 		dest[destlen] = src[srclen];
