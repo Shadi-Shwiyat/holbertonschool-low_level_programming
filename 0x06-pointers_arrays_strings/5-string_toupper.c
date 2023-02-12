@@ -22,7 +22,6 @@ char *string_toupper(char *s)
 		}
 		s++;
 	}
-	s[i] = '\0';
 
 	return (s);
 }
