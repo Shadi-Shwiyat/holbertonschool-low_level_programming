@@ -4,25 +4,25 @@
  * *string_toupper - function changes all letters
  *	of a string to an uppercase
  *
- * @str: the string to be converted to uppercase
+ * @s: the string to be converted to uppercase
  *
  *
  * Return: char
  */
 
-char *string_toupper(char *str)
+char *string_toupper(char *s)
 {
 	int i = 0;
 
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
+		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			str[i] -= 32;
+			s[i] -= 32;
 		}
-		str++;
+		s++;
 	}
-	str[i] = '\0';
+	s[i] = '\0';
 
-	return (str);
+	return (s);
 }
