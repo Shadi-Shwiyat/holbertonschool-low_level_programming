@@ -11,14 +11,14 @@
  *	bytes from accept
  */
 
-unsigned int *_strspn(char *s, char*accept)
+unsigned int _strspn(char *s, char*accept)
 {
 	unsigned int initial_length = 0;
 	unsigned int len1 = 0;
 	unsigned int len2 = 0;
 	unsigned int i, j;
 
-	while (s[len1] != '\0')
+	while (s[len1] != 32)
 	{
 		len1++;
 	}
