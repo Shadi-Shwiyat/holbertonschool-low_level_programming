@@ -14,28 +14,33 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int len1 = 0;
-	unsigned int len2 = 0;
+	int needle_len = 0;
+	int haystack_len = 0;
+	int i, j;
 
-	while (haystack[len1] != '\0')
+	while (haystack[haystack_len] != '\0')
 	{
-		while (needle[len2] != '\0')
-		{
-			if (haystack[len1] == needle[len2] && needle[len2] != '\0')
-			{
-				len1++;
-				len2++;
-			}
-			else
-			{
-				len1++;
-			}
-		}
-		if (needle[len2] == '\0')
-		{
-			return (haystack + (len1 - len2));
-		}
+		haystack_len++;
+	}
+	while (needle[needle_len] != '\0')
+	{
+		needle_len++;
 	}
 
+	for (i = 0; i <= haystack_len - needle_len; i++)
+	{
+		for (j = 0; j < needle_len; j++)
+		{
+			if (haystack[i + j] != needle[j])
+			{
+				break;
+			}
+		}
+		if (j == needle_len)
+		{
+			return (haystack + i);
+		}
+	}
 	return ('\0');
+
 }
