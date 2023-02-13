@@ -22,7 +22,7 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		len1++;
 	}
-	while (s[len2] != '\0')
+	while (accept[len2] != '\0')
 	{
 		len2++;
 	}
