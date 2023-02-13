@@ -6,12 +6,12 @@
  * @s: the string to search
  * @accept: the list of bytes to check for
  *
- * Return: number of bytes in initial 
- *	segment s, which consist only of 
+ * Return: number of bytes in initial
+ *	segment s, which consist only of
  *	bytes from accept
  */
 
-unsigned int _strspn(char *s, char*accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int initial_length = 0;
 	unsigned int len1 = 0;
