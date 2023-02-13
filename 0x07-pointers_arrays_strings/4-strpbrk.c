@@ -13,13 +13,13 @@
  *	bytes are found
  */
 
-char _strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	unsigned int len1 = 0;
 	unsigned int len2 = 0;
 	unsigned int i, j;
 
-	while (s[len1] != 32)
+	while (s[len1] != '\0')
 	{
 		len1++;
 	}
