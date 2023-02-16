@@ -1,38 +1,46 @@
 #include "main.h"
+
 /**
- *  * _strstr - locates a substring in string
- *   * @haystack: stack of hay to search
- *    * @needle: needle to find
- *     *
- *      * Return: first occurence of the needle otherwise null
- *       *
- *        */
+ * *_strstr - function locates a substring
+ *
+ * @haystack: the thing to search through
+ * @needle: the thing you are looking for
+ *
+ * Return: a pointer to the byte in haystack
+ *	that matches one of the bytes
+ *	in needle, or NULL if no such
+ *	bytes are found
+ */
 
 char *_strstr(char *haystack, char *needle)
 {
-		int i = 0;
-			int j;
+	int needle_len = 0;
+	int haystack_len = 0;
+	int i, j;
 
-				if (*needle == '\0')
-							return (haystack);
-					for (i = 0; haystack[i] != '\0'; i++)
-							{
-										if (haystack[i] == needle[0])
-													{
-																	for (j = 0; needle[j] != '\0'; j++)
-																					{
-																										if (haystack[i + j] == '\0')
-																																break;
-																														if (needle[j] == haystack[i + j])
-																																				continue;
-																																		break;
-																																					}
-																				if (needle[j] == '\0')
-																								{
-																													haystack += i;
-																																	return (haystack);
-																																				}
-																						}
-											}
-						return (0);
+	while (haystack[haystack_len] != '\0')
+	{
+		haystack_len++;
+	}
+	while (needle[needle_len] != '\0')
+	{
+		needle_len++;
+	}
+
+	for (i = 0; i <= haystack_len - needle_len; i++)
+	{
+		for (j = 0; j < needle_len; j++)
+		{
+			if (haystack[i + j] != needle[j])
+			{
+				break;
+			}
+		}
+		if (j == needle_len)
+		{
+			return (haystack + i);
+		}
+	}
+	return ('\0');
+
 }
