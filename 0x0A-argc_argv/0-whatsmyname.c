@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * mynameis - program prints its own name
+ * main - program prints its own name
  * @argc: the number of command line arguements
  * @argv: an array of strings of argc
  *
