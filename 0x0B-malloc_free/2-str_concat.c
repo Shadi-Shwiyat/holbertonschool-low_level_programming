@@ -43,8 +43,10 @@ char *str_concat(char *s1, char *s2)
 			s[y] = s1[y];
 
 		if (y >= i)
+		{
 			s[y] = s2[j];
 			j++;
+		}
 		y++;
 	}
 	s[y] = '\0';
