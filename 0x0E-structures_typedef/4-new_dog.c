@@ -6,7 +6,6 @@
 /**
  * new_dog - function creates a new dog
  *
- * @d: the structure to print
  * @name: name of the dog
  * @age: the age of the dog
  * @owner: the owner of the dog
