@@ -1,1 +1,1 @@
-This repo is the start of our learing of C programming language!
+This repo is the start of our learning of C programming language!
